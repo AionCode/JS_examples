@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<script src="script.js"></script> -->
+<script>
+var pitanje = prompt("Unesite pitanje");
+var randomBroj = Math.floor(Math.random() * 7);
+var odgovor = '';
+switch (randomBroj) {
+  case 0:
+    odgovor = 'Definitivno da';
+    break;
+  case 1:
+    odgovor = 'Bez sumnje';
+    break;
+  case 2:
+    odgovor = 'Najverovatnije';
+    break;
+  case 3:
+    odgovor = 'Bolje da ne znas';
+    break;
+  case 4:
+    odgovor = 'Pitajte kasnije';
+    break;
+  case 5:
+    odgovor = 'Ishod nije tako dobar';
+    break;
+  case 6:
+    odgovor = 'Znaci ukazuju na ne';
+    break;
+  case 7:
+    odgovor = 'Moj odgovor je ne';
+    break;
+}
+document.write('Pitanje: ' + pitanje);
+document.write('<br>');
+document.write('Odgovor: ' + odgovor);
+</script>
+</head>
+<body>
+
+
+
+
+</body>
+</html>

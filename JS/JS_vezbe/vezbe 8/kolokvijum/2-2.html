@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<form name="voce">            
+<input type="checkbox" name="voce" value="jabuka">Jabuka<br>
+<input type="checkbox" name="voce" value="kruska">Kruska<br>
+<input type="button" value="Prosledi" onClick="Voce()"></input>
+</form>
+
+<script>
+function Voce(){
+var voce = document.voce.voce;
+var rezultat = '';
+for ( i = 0; i < voce.length; i++) {
+     if ( voce[i].checked === true ) {
+        rezultat += voce[i].value + " ";
+     }
+}
+var novi = window.open("","","width=200,height=200");
+novi.document.write(rezultat);
+}
+</script>
+</body>
+</html>

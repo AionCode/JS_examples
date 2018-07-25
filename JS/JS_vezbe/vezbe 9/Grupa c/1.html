@@ -1,0 +1,26 @@
+<html>
+<head>
+
+<script>
+var unetaRec = prompt('Unesite neku rec').toUpperCase();
+
+function brojSamoglasnika(rec) {
+  var broj = 0;
+
+  
+  for (var i = 0; i <= rec.length - 1; i++) {
+
+    if (rec.charAt(i) == "A" || rec.charAt(i) == "E" || rec.charAt(i) == "I" || rec.charAt(i) == "O" || rec.charAt(i) == "U") {
+      broj += 1;
+    }
+  }
+  return broj;
+}
+
+document.write("Broj samoglasnika:"+brojSamoglasnika(unetaRec));
+</script>
+</head>
+<body>
+
+</body>
+</html>

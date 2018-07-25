@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+		function izracunaj() {
+			var unos = document.konvert.unos.value;
+			var rezultat;
+
+			if (document.konvert.izbor.value == 'milje') {
+				rezultat = unos / 1.60934;
+				}  
+			else {
+				rezultat = unos * 1.60934;
+				}    
+		document.konvert.rezultat.value = rezultat;
+		}
+		</script>
+    </head>
+	<body>
+        <form name="konvert">
+            <label>Unos:</label>
+            <input type="text" name="unos" onkeyup="izracunaj()"><br>
+
+            <input type="radio" name="izbor" value="milje" checked onclick="izracunaj()" id="milje"><label for="milje"> Km u milje</label><br>
+            <input type="radio" name="izbor" value="km" onclick="izracunaj()" id="km"><label for="km"> Milje u km</label><br>
+
+            <label>Rezultat: </label>
+            <input type="text" name="rezultat"><br>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+</head>
+<body>
+<script>
+function lista() {
+var broj=prompt("Unesite broj radnika");
+var ispis = "Radnici: <br>";
+for(i=1;i<=broj;i++)
+{
+var ime=prompt("Unesite ime "+i+". radnika");
+ispis += i+". " + ime + "<br>";
+}
+return ispis;
+}
+
+document.write(lista());
+</script>
+
+</body>
+</html>
+

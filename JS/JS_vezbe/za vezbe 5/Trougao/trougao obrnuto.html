@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+		var broj = prompt('Unesite neki broj');
+            function zvezdice(broj) {
+				//redovi
+                for (var i = broj; i >= 1; i--) {
+                    var ispis = "";
+					//ispis zvezdica
+					for (var j = i; j >= 1; j--) {
+                        ispis += "*"
+                    }
+                    document.write(ispis+'<br>');
+                }
+            }
+			zvezdice(broj);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

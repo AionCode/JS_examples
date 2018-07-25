@@ -1,0 +1,24 @@
+<html>
+	<head>
+        <script>
+			var i = 0;
+			function dodaj() {
+			i++;
+			var stavka = document.forma.stavka.value;
+			var red = i + '. ' + stavka + '<br>';
+
+			document.getElementById("ispis").innerHTML += red;
+			document.forma.stavka.value = "";
+			}
+		</script>
+    </head>
+	<body>    
+        <form name="forma">
+            <input type="text" name="stavka">
+            <input type="button" value="Dodaj" onclick="dodaj()">
+        </form>
+
+        <div id="ispis"></div>
+
+    </body>
+</html>

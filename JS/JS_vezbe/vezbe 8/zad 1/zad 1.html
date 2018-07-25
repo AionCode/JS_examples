@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function nekaDruga(){
+		if (document.getElementById('druga').checked){
+      document.getElementById('unos').style.display="inline";
+		}
+		else{ 
+			document.getElementById('unos').style.display="none";
+		}
+	}
+function prosledi(){
+	if (document.getElementById('druga').checked){
+	alert(document.forma.drugaBoja.value)
+	}
+	else {
+	alert(document.forma.boje.value)
+	}
+}
+</script>
+</head>
+<body>
+<p>Koja je vasa omiljena boja?</p>
+	<form name="forma">
+	<input type="radio" name="boje" value="crvena" onchange= "nekaDruga()" id="crvena"><label for="crvena">Crvena</label><br>
+	<input type="radio" name="boje" value="zelena" onchange= "nekaDruga()" id="zelena"><label for="zelena">Zelena</label><br>
+	<input type="radio" name="boje" value="plava" onchange= "nekaDruga()" id="plava"><label for="plava">Plava</label><br>
+	<input type="radio" name="boje" value="druga" id="druga" onchange= "nekaDruga()"><label for="druga">Neka druga</label><br>		    
+	<div id="unos" style="display:none">
+		<label for = "unos">Unesite boju</label>
+		<input type = "text" name = "drugaBoja" id = "unos"><br/>
+	</div>
+	<input type="button" value="Prosledi" onclick="prosledi()">
+	</form>
+</body>
+</html>

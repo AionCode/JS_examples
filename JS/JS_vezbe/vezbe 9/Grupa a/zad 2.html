@@ -1,0 +1,30 @@
+<html>
+	<body>
+        <form name="konvertor">
+            <label>Unos:</label>
+            <input type="text" name="unos"><br>
+
+            <input type="radio" name="izbor" value="kmh" checked >km/h u m/s<br>
+            <input type="radio" name="izbor" value="ms">m/s u km/h<br>
+
+            <label>Rezultat: </label>
+            <input type="text" name="rezultat"><br>
+
+            <input type="button" value="Konvertuj" onclick="konvertuj()">
+        </form>
+		<script>
+		function konvertuj() {
+			var unos = document.konvertor.unos.value;
+			var rezultat;
+
+			if (document.konvertor.izbor.value == 'kmh') {
+				rezultat = unos / 3.6;
+				}  
+			else {
+				rezultat = unos * 3.6;
+				}    
+		document.konvertor.rezultat.value = rezultat;
+		}
+		</script>
+    </body>
+</html>

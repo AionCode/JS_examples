@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p> Nasumican broj: <span id="random"></span></p>
+<p> Uneti broj: <span id="broj"></span></p>
+<p id="poruka"></p>
+<script>
+var randomBroj = Math.floor(Math.random() * 10);
+var broj = prompt('Unesite broj od 0 do 10');
+
+if (randomBroj == broj) {
+    poruka = "Cestitamo";
+} else {
+    poruka = "Pogresan broj";
+}
+
+document.getElementById("random").innerHTML = randomBroj;
+document.getElementById("broj").innerHTML = broj;
+document.getElementById("poruka").innerHTML = poruka;
+</script>
+
+</body>
+</html>

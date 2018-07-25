@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<form name="forma">            
+<input type="checkbox" name="voce" value="jabuka">Jabuka<br>
+<input type="checkbox" name="voce" value="kruska">Kruska<br>
+<input type="button" value="Prosledi" onClick="Voce()"></input>
+</form>
+<p id="ispis">Ovde ce se ispisati izabrano voce.</p>
+<script>
+function Voce(){
+var voce = document.forma.voce;
+var rezultat = '';
+for ( i = 0; i < voce.length; i++) {
+     if ( voce[i].checked === true ) {
+        rezultat += voce[i].value + " ";
+     }
+}
+document.getElementById("ispis").innerHTML = rezultat;
+}
+</script>
+</body>
+</html>

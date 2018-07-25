@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<script>
+var sati = new Date().getHours();
+
+function jutro(){
+document.write('Dobro jutro'); 
+}
+function dan(){
+document.write('Dobar dan'); 
+}
+function vece(){
+document.write('Dobro vece'); 
+}
+
+
+if (sati < 10) {
+    jutro();
+} else if (sati < 19) {
+    dan();
+} else {
+    vece();
+}
+
+</script>
+
+</body>
+</html>

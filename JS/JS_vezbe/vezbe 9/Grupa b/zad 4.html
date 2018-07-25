@@ -1,0 +1,32 @@
+<html>
+<body>
+	<p>Izaberite proizvode</p>
+    <form name="forma">
+        <input type="checkbox" name="izbor" value="jabuke"> Jabuke<br>
+        <input type="checkbox" name="izbor" value="mleko"> Mleko<br>
+        <input type="checkbox" name="izbor" value="biber"> Biber<br>
+        <br>
+		<input type="button" value="Kupi" onclick="kupi()">   
+    </form>
+
+	
+		<script>
+            function kupi() {
+                
+				var rezultat = "";
+				  
+                var izbor = document.forma.izbor;
+                 
+                for ( i = 0; i < 3; i++) {
+                     
+                    if ( izbor[i].checked === true ) {
+                        rezultat += "- " + izbor[i].value + "<br>";
+                    }                     
+                }
+				var myWindow=window.open("","","width=200,height=200")
+				myWindow.document.write("Kupili ste: <br>"+ rezultat);
+
+            }                         
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<body>
+	<p>Forma za narucivanje</p>
+    <form name="forma">
+        <input type="checkbox" name="izbor" value="220"> Hamburger (220 rsd)<br>
+        <input type="checkbox" name="izbor" value="425"> Pica (425 rsd)<br>
+        <input type="checkbox" name="izbor" value="130"> Palacinka (130 rsd)<br>
+        <br>
+		<input type="button" value="Naruci" onclick="izracunaj()">   
+    </form>
+	
+		<script>
+            function izracunaj() {
+                
+				var rezultat = 0;
+				  
+                var izbor = document.forma.izbor;
+                 
+                for ( i = 0; i < 3; i++) {
+                     
+                    if ( izbor[i].checked === true ) {
+                        rezultat += Number(izbor[i].value);
+                    }                     
+                }
+				var myWindow=window.open("","","width=200,height=200")
+				myWindow.document.write("Cena iznosi "+ rezultat + "rsd");
+            }                         
+    </script>
+</body>
+</html>

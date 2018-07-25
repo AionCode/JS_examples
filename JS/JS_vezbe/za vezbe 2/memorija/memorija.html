@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>Konvertor kapaciteta memorije</h1>
+<p>b: <span id="bit"></span></p>
+<p>B: <span id="bajt"></span></p>
+<p>KB: <span id="kb"></span></p>
+<p>MB: <span id="mb"></span></p>
+<p>GB: <span id="gb"></span></p>
+<script>
+var bit = prompt('Unesite kapacitet u bitovima');
+
+var bajt = bit / 8;
+var kb = bajt / 1024;
+var mb = kb / 1024;
+var gb = mb / 1024;
+document.getElementById("bit").innerHTML = bit;
+document.getElementById("bajt").innerHTML = bajt;
+document.getElementById("kb").innerHTML = kb;
+document.getElementById("mb").innerHTML = mb;
+document.getElementById("gb").innerHTML = gb;
+</script>
+<!--<script src="script.js"></script>-->
+</body>
+</html>

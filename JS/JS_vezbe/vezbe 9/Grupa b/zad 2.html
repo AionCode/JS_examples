@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <form name="putnici">
+            <label>Ime:</label><br>
+            <input type="text" name="ime" /><br>
+			<label>Status:</label><br>
+            <select name="status">
+                <option value="Student">Student</option>
+                <option value="Zaposleni">Zaposleni</option>
+            </select><br><br>
+                <input type="button" value="Dodaj" onClick="dodaj()"/>
+        </form>
+        <div id="ispis"></div>
+		
+		<script>
+			function dodaj() {	
+    var ime = document.putnici.ime.value;
+    var status = document.putnici.status.value;    
+	if(ime)
+		{
+    var putnik = '- Ime: ' + ime + ' - Status: ' + status + '<br>';
+	document.getElementById("ispis").innerHTML += putnik;	
+		}
+		else
+		{
+			alert("Unesite ime")
+		}		
+	}
+		</script>
+    </body>
+</html>

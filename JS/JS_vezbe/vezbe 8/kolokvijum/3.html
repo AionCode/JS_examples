@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+        <form name="forma">
+            <input type="text" name="ime"></input> 
+            <input type="text" name="prezime" ></input>
+            <input type="button" value="ispis" onClick="funIspis()"></input>
+        <p id="paragraf"></p>
+        </form>
+        <script>
+            function funIspis(){
+			var ime = document.forma.ime.value;
+			var prezime = document.forma.prezime.value;
+			var ispis = "<table border=1><tr><td>Ime</td><td>Prezime</td></tr><tr><td>"+ime+"</td><td>"+prezime+"</td></tr></table>";
+			document.getElementById("paragraf").innerHTML = ispis;
+} 
+</script>  
+</body>
+</html>

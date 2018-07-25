@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <script>
+			function dodajPutnika() {
+	
+    var ime = document.putnici.ime.value;
+    var prezime = document.putnici.prezime.value;
+    var destinacija = document.putnici.destinacija.value;
+    
+	if(ime&&prezime)
+		{
+    var putnik = '<div>- Ime: ' + ime + ' - Prezime: ' + prezime + ' - Destinacija: ' + destinacija +'</div>';
+	document.getElementById("ispis").innerHTML += putnik;
+	
+	document.putnici.ime.value = document.putnici.prezime.value = "";
+	
+		}
+		else
+		{
+			alert("Popunite ime i prezime")
+		}
+		
+}
+		</script>
+    </head>
+
+    <body>
+        <form name="putnici">
+            <label>Ime:</label><br>
+            <input type="text" name="ime" /><br>
+            <label>Prezime:</label><br>
+            <input type="text" name="prezime" /><br>
+			<label>Destinacija:</label><br>
+            <select name="destinacija">
+                <option value="Maldivi">Maldivi</option>
+                <option value="Dubai">Dubai</option>
+				<option value="Bali">Bali</option>
+                <option value="Abu Dabi">Abu Dabi</option>
+            </select><br><br>
+                <input type="button" value="Dodaj putnika" onClick="dodajPutnika()"/>
+        </form>
+        
+        <div id="ispis"></div>
+
+    </body>
+
+</html>

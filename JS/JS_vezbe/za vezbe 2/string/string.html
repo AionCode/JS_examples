@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>Ispis i formatiranje stringova</h1>
+
+<table border="1">
+  <tr>
+    <td >Upisani string</td>
+    <td id="unos"></td>
+  </tr>
+  <tr>
+    <td>Velika slova</td>
+    <td id="velika"></td>
+  </tr>
+  <tr>
+    <td>Mala slova</td>
+    <td id="mala"></td>
+  </tr>
+  <tr>
+    <td>Broj karaktera</td>
+    <td id="broj"></td>   
+  </tr>
+</table>
+<script>
+var unos = prompt('Unesite neki string');
+document.getElementById("unos").innerHTML = unos;
+document.getElementById("velika").innerHTML = unos.toUpperCase();
+document.getElementById("mala").innerHTML = unos.toLowerCase();
+document.getElementById("broj").innerHTML = unos.length;
+</script>
+<!--<script src="script.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+</head>
+<body>
+<script>
+function ispisTabele() {
+var broj=prompt("Broj redova u tabeli");
+ispis = "<table border='1'><tr><th>#</th><th>Ime i prezime</th></tr>";
+for(i=1;i<=broj;i++)
+{
+var ime=prompt("Unesite "+i+". ime i prezime");
+ispis = ispis + ("<tr><td>"+i+".</td><td>" +ime+ "</td></tr>");
+}
+ispis += "</table>";
+return ispis;
+}
+document.write(ispisTabele());
+</script>
+</body>
+</html>
+

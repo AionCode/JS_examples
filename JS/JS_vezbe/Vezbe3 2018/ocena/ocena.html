@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p id="ocena"></p>
+<script>
+var bodovi = prompt('Unesite koliko imate bodova');
+
+if (bodovi > 94) {
+    ocena = "Dobili ste desetku";
+} else if (bodovi > 84) {
+    ocena = "Dobili ste devetku";
+} else if (bodovi > 74) {
+    ocena = "Dobili ste osmicu";
+} else if (bodovi > 64) {
+    ocena = "Dobili ste sedmicu";
+} else if (bodovi > 54) {
+    ocena = "Dobili ste sesticu";
+} else {
+    ocena = "Vidimo se u sledecem roku";
+}
+document.getElementById("ocena").innerHTML = ocena;
+</script>
+
+</body>
+</html>

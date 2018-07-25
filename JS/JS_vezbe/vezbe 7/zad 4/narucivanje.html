@@ -1,0 +1,38 @@
+<html>
+<head>
+	<script>
+            function izracunaj() {
+                if (document.forma.izbor.value == 'mala') {
+				rezultat = 80;
+				}  
+			else {
+				rezultat = 120;
+				}  
+                var polje = document.forma.polje;
+                 
+                for ( i = 0; i < 3; i++) {
+                     
+                    if ( polje[i].checked === true ) {
+                        rezultat += Number(polje[i].value);
+                    }                     
+                }
+				document.getElementById("ispis").innerHTML = "Cena iznosi "+ rezultat + "rsd"; 
+            }                         
+    </script>
+    
+</head>
+<body>
+	<p>Forma za narucivanje pice:</p>
+    <form name="forma">
+		<input type="radio" name="izbor" value="mala" checked />Mala pica (80 rsd)<br>
+        <input type="radio" name="izbor" value="velika">Velika pica (100 rsd)<br>
+	<p>Izaberite priloge:</p>
+        <input type="checkbox" name="polje" value="20"> Pecurke (+20 rsd)<br>
+        <input type="checkbox" name="polje" value="35"> Maslinke (+35 rsd)<br>
+        <input type="checkbox" name="polje" value="28"> Kobasice (+28 rsd)<br>
+        <br>
+		<input type="button" value="Naruci" onclick="izracunaj()">   
+    </form>
+	<div id="ispis"></div>
+</body>
+</html>

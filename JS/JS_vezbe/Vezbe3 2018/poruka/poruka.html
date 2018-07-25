@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<p id="poruka"></p>
+<script>
+var sati = prompt('Unesite koliko je sati');
+
+if (sati < 10) {
+    poruka = "Dobro jutro";
+} else if (sati < 20) {
+    poruka = "Dobar dan";
+} else if (sati < 25){
+    poruka = "Dobro vece";
+}
+else {
+    poruka = "Unesite vreme izmedju 0 i 24";
+}
+document.getElementById("poruka").innerHTML = poruka;
+</script>
+
+</body>
+</html>
