@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#h3Hide").hide(); // " # " se koristi za manipulisanje specificnog elementa po ID-u
+        $("#pHide").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("button").click(function(){ // " . " se koristi za manipulisanje elemenata po klasi
+        $(".test").hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+<h3 id="h3Hide">This is hiding heading</h3>
+
+<p>This is a paragraph.</p>
+<p id="pHide">This is hiding paragraph.</p>
+
+<h2 class="test">This is a heading</h2>
+
+<p class="test">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+
+</body>
+</html>
