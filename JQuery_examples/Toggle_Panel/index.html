@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<script> 
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("500").fadeOut("200");
+            });
+        });
+
+         $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").toggle("200");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#flip3").hover(function(){
+                $("#panel3").toggle("600");
+            });
+        });
+</script>
+
+</head>
+<body>
+ 
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+
+<div id="flip2">Click to slide the panel from the side</div>
+<div id="panel2">Hello world!</div>
+
+<div id="flip3">Hower to slide the panel down or up</div>
+<div id="panel3">Hello world!</div>
+
+
+</body>
+</html>
