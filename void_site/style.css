@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+    height: calc(100% - 2em);
+    margin: 0%;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: black;
+}
+
+.logo {
+    width: 313px;
+    height: 133px;
+    padding: 2em;
+    margin: 1.4em;
+}
+
+p {
+    position: relative;
+    color: rgb(223, 183, 183);
+    font-family: verdana;
+    font-size: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;     
+    }
